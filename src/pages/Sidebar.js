@@ -7,12 +7,28 @@ import {
   faComments,
   faCog,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom'; 
 
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState("Dashboard");
+  const navigate = useNavigate();
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    
+    const optionToRoute = {
+      "Dashboard": "/",
+      "Projects": "/projects",
+      "Task Hub": "/taskhub",
+      "Chat": "/chat",
+      "Settings": "/settings",
+    };
+
+    const route = optionToRoute[option];
+    if (route) {
+      navigate(route); // Use navigate to change the route
+    }
+  
   };
 
   return (
