@@ -1,38 +1,299 @@
-.App {
-  text-align: center;
+/* Navbar.css */
+
+.navbar {
+  background-color: #4D989D;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding: 20px 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .logo-container {
+    /* Adjust the maximum width of the logo based on navbar padding */
+    max-width: calc(100% - 40px); /* Subtract twice the left/right padding */
   }
+  .logo {
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Automatically adjust height based on width */
+  }
+
+  .logo-container img {
+    /* Set the width and height according to your requirements */
+    width: 180px;
+    height: auto; /* Automatically adjust height based on width to maintain aspect ratio */
+  }
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.notification-container img,
+.profile-container img {
+  max-width: 30px;
+  height: auto;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile-container span {
+  margin-right: 10px;
+}
+
+.profile-container img {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.notification-container {
+  /* Add margin for space between profile picture and bell icon */
+  margin-left: 20px;
+  
+}
+.notification-container img {
+  max-width: 40px; /* Increase the size of the bell icon */
+  height: auto;
+  cursor: pointer;
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  padding: 1px 3px;
+  border-radius: 70%;
+}
+
+
+/* Sidebar.css */
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #4D989D;
+  color: #fff;
+  padding: 20px;
+}
+
+.group-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.group-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-list li {
+  margin-bottom: 10px;
+}
+
+.group-list a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #4D989D;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.group-list a:hover {
+  cursor: pointer;
+  background-color: #4D989D;
+  color: #fff;
+}
+
+.chat-area {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+}
+
+.chat-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.content {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message-input {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-container {
+  display: flex;
+  height: 100vh;
 }
+
+.sidebar {
+  width: 250px;
+  background-color: #4D989D;
+  color: #fff;
+  padding: 20px;
+}
+
+.group-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.group-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-list li {
+  margin-bottom: 10px;
+}
+
+.group-list a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #4D989D;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.group-list a:hover {
+  cursor: pointer;
+  background-color: #4D989D;
+  color: #fff;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.chat-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.content {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+
