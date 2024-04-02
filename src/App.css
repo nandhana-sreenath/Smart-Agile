@@ -1,92 +1,6 @@
-/* Navbar.css */
-
-.navbar {
-  background-color: #4D989D;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  padding: 20px 40px;
-}
-
-  .logo-container {
-    /* Adjust the maximum width of the logo based on navbar padding */
-    max-width: calc(100% - 40px); /* Subtract twice the left/right padding */
-  }
-  .logo {
-    width: 50px; /* Set the width of the logo */
-    height: auto; /* Automatically adjust height based on width */
-  }
-
-  .logo-container img {
-    /* Set the width and height according to your requirements */
-    width: 180px;
-    height: auto; /* Automatically adjust height based on width to maintain aspect ratio */
-  }
-
-.left-section,
-.right-section {
-  display: flex;
-  align-items: center;
-}
-
-.notification-container img,
-.profile-container img {
-  max-width: 30px;
-  height: auto;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-
-.profile-container {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.profile-container span {
-  margin-right: 10px;
-}
-
-.profile-container img {
-  width: 40px; /* Adjust the size as needed */
-  height: 40px; /* Adjust the size as needed */
-  border-radius: 50%; /* Creates a circular shape */
-  object-fit: cover; /* Ensures the image covers the entire container */
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.notification-container {
-  /* Add margin for space between profile picture and bell icon */
-  margin-left: 20px;
-  
-}
-.notification-container img {
-  max-width: 40px; /* Increase the size of the bell icon */
-  height: auto;
-  cursor: pointer;
-}
-
-.notification-container {
-  position: relative;
-}
-
-.notification-count {
-  position: absolute;
-  top: -6px;
-  right: -5px;
-  background-color: red;
-  color: white;
-  font-size: 11px;
-  padding: 1px 3px;
-  border-radius: 70%;
-}
-
 
 /* Sidebar.css */
-
+/* 
 .sidebar {
   width: 200px;
   height: 100vh;
@@ -296,4 +210,4 @@
   border-radius: 10px;
 }
 
-
+ */
